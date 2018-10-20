@@ -93,7 +93,7 @@ namespace JummahManagement.Data
 	    try
 	    {
 		// will throw an exception if there is an error connecting to the database
-		if(ConnectionState.Close == newCon.Con.State){
+		if(ConnectionState.Closed == newCon.Con.State){
 			newCon.Con.Open();
 		}
 
@@ -144,7 +144,7 @@ namespace JummahManagement.Data
 	    {
 		// will throw an exception if there is an error connecting to the database
 		//will be handled in the catch statement
-		if(ConnectionState.Close == newCon.Con.State){
+		if(ConnectionState.Closed == newCon.Con.State){
 			newCon.Con.Open();
 		}
 

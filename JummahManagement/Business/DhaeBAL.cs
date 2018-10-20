@@ -90,7 +90,7 @@ namespace JummahManagement.Business
             }
             catch (Exception)
             {
-                throw;
+                return 0;
             }
         }
 
